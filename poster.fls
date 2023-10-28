@@ -1,0 +1,318 @@
+PWD /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter
+INPUT /usr/local/texlive/2021/texmf.cnf
+INPUT /usr/local/texlive/2021/texmf-dist/web2c/texmf.cnf
+INPUT /usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/poster.tex
+OUTPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/poster.log
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/a0poster.cls
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/a0poster.cls
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/a0poster.cls
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/a0poster.cls
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/a0poster.cls
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/a0poster.cls
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/a0poster.cls
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/a0poster.cls
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/a0poster.cls
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/a0poster.cls
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/a0poster.cls
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/article.cls
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/size10.clo
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/size10.clo
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/size10.clo
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/base/size10.clo
+OUTPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/a0header.ps
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/a0poster/a0size.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/a0poster/a0size.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/a0poster/a0size.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/a0poster/a0size.sty
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/textpos/textpos.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/textpos/textpos.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/textpos/textpos.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/textpos/textpos.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/textpos/textpos.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/textpos/textpos.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/textpos/textpos.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/textpos/textpos.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/textpos/textpos.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/textpos/textpos.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/textpos/textpos.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/helvet.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/helvet.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/helvet.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/helvet.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/helvet.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/helvet.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/helvet.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/helvet.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/helvet.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/helvet.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/helvet.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/color.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/color.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/color.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/color.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/color.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/color.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/color.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/color.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/color.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/color.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics/color.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/graphics-cfg/color.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/poster.aux
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/poster.aux
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/poster.aux
+OUTPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/poster.aux
+INPUT /usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/local/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/ucl_bar_black.eps
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/ucl_bar_black.eps
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/ucl_bar_black.eps
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/ucl_bar_black.eps
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/ucl_bar_black.eps
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/ucl_bar_black-eps-converted-to.pdf
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/ucl_bar_black-eps-converted-to.pdf
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/ucl_bar_black.eps
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/ucl_bar_black-eps-converted-to.pdf
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/ucl_bar_black-eps-converted-to.pdf
+OUTPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/poster.pdf
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/ucl_bar_black-eps-converted-to.pdf
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ot1phv.fd
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ot1phv.fd
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ot1phv.fd
+INPUT /usr/local/texlive/2021/texmf-dist/tex/latex/psnfss/ot1phv.fd
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/helvetic/phvr7t.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/helvetic/phvr7t.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/helvetic/phvr7t.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/helvetic/phvr7t.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmmi12.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmex10.tfm
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/fig1.eps
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/fig1.eps
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/fig1.eps
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/fig1.eps
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/fig1.eps
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/fig1-eps-converted-to.pdf
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/fig1-eps-converted-to.pdf
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/fig1.eps
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/fig1-eps-converted-to.pdf
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/fig1-eps-converted-to.pdf
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/fig1-eps-converted-to.pdf
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/helvetic/phvr7t.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmtt12.tfm
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/fig2.eps
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/fig2.eps
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/fig2.eps
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/fig2.eps
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/fig2.eps
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/fig2-eps-converted-to.pdf
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/fig2-eps-converted-to.pdf
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/fig2.eps
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/fig2-eps-converted-to.pdf
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/fig2-eps-converted-to.pdf
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/fig2-eps-converted-to.pdf
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/public/cm/cmr17.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/helvetic/phvr7t.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/jknappen/ec/tcrm2488.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/adobe/helvetic/phvr7t.vf
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
+INPUT /usr/local/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/adobe/helvetic/phvr7t.vf
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/adobe/helvetic/phvr7t.vf
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/adobe/helvetic/phvr7t.vf
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/adobe/helvetic/phvr7t.vf
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/vf/adobe/helvetic/phvr7t.vf
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/tfm/adobe/helvetic/phvr8r.tfm
+INPUT /Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/poster.aux
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-ts1.enc
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/enc/dvips/base/8r.enc
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm2488.pfb
+INPUT /usr/local/texlive/2021/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb
