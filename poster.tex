@@ -35,12 +35,13 @@
 
 % Graphics to include graphics. Times is nice on posters, but you
 % might want to switch it off and go for CMR fonts.
-\usepackage[final]{graphics}
+\usepackage[final]{graphicx}
 \usepackage{wrapfig,helvet}
 \usepackage{amsmath}
 
 %to write complex numbers, integers, rationals
 \usepackage{amsfonts}
+\usepackage{caption}
 
 % These colours are tried and tested for titles and headers. Don't
 % over use color!
@@ -80,7 +81,7 @@
 }
 \makeatother
 
-\title{The fundamental group of the Stringy Kähler Moduli Space acts on \\ $D^b(X)$ via spherical twists}
+\title{A mirror symmetry conjecture: \textit{The fundamental group of the \\ Stringy Kähler Moduli Space acts on $D^b(X)$ via spherical twists}}
 
 \author{Michela Barbieri}
 
@@ -102,8 +103,8 @@
 %----------------------------------------------------------------------%
 %           First column.                                              %
 %----------------------------------------------------------------------%
-\begin{textblock}{7}(0,2.4)
-\Head{The Context}
+\begin{textblock}{7}(0, 2.4)
+\Head{The B-side: Toric Geometric Invariant Theory}
 
 \sf % Selects sans serif family: part of the UCL corporate image!
 We start with algebraic torus $T \cong (\mathbb{C}^*)^r$ acting on a vector space $\mathbb{C}^n$. These actions 
@@ -112,53 +113,22 @@ $$
 (\lambda_1, \dots, \lambda_r) \cdot (z_1, \dots, z_n) = ({\lambda_1}^{q_{11}}{\lambda_2}^{q_{12}}\dots {\lambda_r}^{q_{1r}} z_1, \dots, {\lambda_1}^{q_{n1}}{\lambda_2}^{q_{n2}}\dots {\lambda_r}^{q_{nr}} z_1)
 $$
 We get an $n \times r$ integer matrix $Q = (q_{ij})$, called the weight matrix. \\
-We would like to construct an algebraic variety that parametrises the actions quotients. \textbf{Geometric Invariant Theory} (GIT) is the theory that tells us what to throw away before we quotient so that we get a good/geometric quotient. \cite{mumford1994geometric}
+We construct an algebraic variety that parametrises the actions quotients. \textit{Geometric Invariant Theory} (GIT) is the theory that tells \textit{the unstable locus} to throw away before we quotient so that we get a good/geometric quotient \cite{mumford1994geometric}. GIT quotients are often denoted $X // G$.
 \begin{example}
-  Consider $\mathbb{C}^*$ acting on $\mathbb{C}^2$ linearly, i.e. $\lambda \cdot (z_1, \, z_2) = (\lambda z_1,\, \lambda z_2)$.
-  \begin{center}\includegraphics{orbits of P1.png}\end{center}
-  \begin{picture}(0,0)
-  \put(435,295){$aL$} 
-  \put(550,80){$a$}
-  \put(510,210){\textcolor{DarkBlue}{$F=6\pi\mu a$}}
-  \end{picture} 
+  Consider $\mathbb{C}^*$ acting on $\mathbb{C}^2$ linearly, i.e. $\lambda \cdot (x, \, y) = (\lambda x,\, \lambda y)$.
+  If we take the quotient space, we see that the orbit of the origin cannot be separated from any other orbit. So we have to remove the origin and as expected, we get  GIT quotient $$ \mathbb{C}^2 // \mathbb{C}^* = \mathbb{C}^2 \ {(0, \, 0)} / \mathbb{C}^* = \mathbb{P}^1$$
+  \begin{figure}
+    \centering
+    \includegraphics[width=13cm]{orbits of P1.png}
+    \caption{Orbits of the $\mathbb{C}^*$ action on $\mathbb{C}^2$.}
+  \end{figure}  
 \end{example}
-In general GIT quotients are not unique, and depending on a choice of \textit{stability} 
-
-
-\bigskip
-\hrule
-\end{textblock}
-
-\begin{textblock}{7}(0,4.52)
-
-\Head{Geometric Invariant Theory and Wall Crossing}
-\sf
--first explain action
--describe the wall crossing algorithm
--add def of calabi yau
-
-
-\begin{center}\includegraphics{fig1.eps}\end{center}
-\begin{picture}(0,0)
-\put(435,295){$aL$} 
-\put(550,80){$a$}
-\put(510,210){\textcolor{DarkBlue}{$F=6\pi\mu a$}}
-\end{picture}
-
-Figures (and labels using the \LaTeX\ picture environment) work as you would expect. 
-
-\bigskip
-\hrule
-\end{textblock}
-
-\begin{textblock}{7}(0,8.70)
-
-\Head{GKZ discriminant locus}
-
-\sf
-Sed metus erat, bibendum ac, congue vitae, mattis et, dolor. Maecenas placerat mauris vel purus. Quisque molestie. Morbi eu mi in nibh venenatis aliquet. Pellentesque dapibus sem eget nibh. Donec sit amet felis. Cras lobortis blandit mauris. Cras non augue. Nullam lobortis risus in augue sodales sollicitudin. Proin vulputate gravida mauris. Sed dictum nunc id turpis. Mauris facilisis condimentum nisl. Aliquam tincidunt risus in tellus. Suspendisse dictum laoreet tellus. In hac habitasse platea dictumst. Proin suscipit, tellus ut molestie pulvinar, velit arcu lobortis neque, nec tempus neque sapien quis turpis. Aliquam accumsan. Ut eros mi, iaculis eu, tempor eu, placerat eget, nisi. Morbi nec justo eu sem fermentum accumsan. Nullam quis ipsum.
-
-Vestibulum tincidunt, odio sed tincidunt lobortis, ante pede lacinia neque, a tempus magna dui in massa. Duis accumsan fermentum eros. Vivamus at mauris viverra odio porta venenatis. Nunc sed massa. Fusce hendrerit, lorem eu sollicitudin dapibus, nisi leo vestibulum ligula, in viverra lacus massa vel augue. Curabitur et nisi id dui dignissim blandit. Sed et nisi accumsan ipsum congue imperdiet. Suspendisse volutpat accumsan metus. Morbi est orci, sagittis in, dignissim id, interdum eu, libero. Maecenas hendrerit. Nulla sed magna. Cras tincidunt. Nulla sodales dictum lorem. Curabitur et neque. 
+In general GIT quotients are not unique and depend on a choice of \textit{stability condition} $\phi \in \mathbb{Z}^r$, where for a given stability condition we denote the GIT quotient $X //_{\phi} G$. Different choices of $\phi$ have us remove different unstable loci and give us non-isomorphic (but birational) quotients.
+\begin{example}
+  Consider $\mathbb{C}^*$ acting on $\mathbb{C}^3$ via $\lambda \cdot (x, \, y, \, z) = (\lambda x,\, \lambda y, \, \lambda^{-1}z)$. The stability conditions space is $\mathbb{Z}$. For $\phi > 0$, we have unstable locus $Z_{+} = \{ x = y = 0 \}$. We have GIT quotient $$\mathbb{C}^3 //_{\phi} \mathbb{C}^* = \mathbb{C}^3 \backslash{\{ x = y = 0 \}} / \mathbb{C}^* = \theta(-1)_{\mathbb{P}^1_{x:y}}.$$
+   For $\phi < 0$, we have unstable locus $Z_{-} = \{z = 0\}$.
+   $$\mathbb{C}^3 //_{\phi} \mathbb{C}^* = \mathbb{C}^3 \backslash{\{ z = 0 \}} / \mathbb{C}^* = \mathbb{A}^1_{x, \, y}.$$
+\end{example}
 
 \bigskip
 \hrule
