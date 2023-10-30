@@ -22,6 +22,12 @@
 \newcommand{\ie}{\textit{i.e.}}
 \setcounter{secnumdepth}{0}
 \newcommand{\comment}[1]{}
+\newtheorem{thm}{Theorem}
+\newtheorem{prop}{Proposition} 
+\newtheorem{corollary}{Corollary} 
+\newtheorem{lemma}{Lemma} 
+\newtheorem{definition}{Definition}
+\newtheorem{example}{Example} 
 
 % The textpos package is necessary to position textblocks at arbitary 
 % places on the page.
@@ -32,6 +38,9 @@
 \usepackage[final]{graphics}
 \usepackage{wrapfig,helvet}
 \usepackage{amsmath}
+
+%to write complex numbers, integers, rationals
+\usepackage{amsfonts}
 
 % These colours are tried and tested for titles and headers. Don't
 % over use color!
@@ -57,7 +66,7 @@
 \renewcommand\@maketitle{%
 \null									%Sets position marker
 {
-\color{headingcol}\sffamily\VERYHuge		%Set title font and colour
+\color{headingcol}\sffamily\VERYHuge	%Set title font and colour
 \@title \par}%
 \vskip 0.6em%
 {
@@ -71,9 +80,9 @@
 }
 \makeatother
 
-\title{Sample UCL-styled A0 scientific poster \LaTeX}
+\title{The fundamental group of the Stringy Kähler Moduli Space acts on \\ $D^b(X)$ via spherical twists}
 
-\author{Helen Wilson (with credit to Ed Long, CoMPLEX)\\ University College London}
+\author{Michela Barbieri}
 
 \begin{document}
 %----------------------------------------------------------------------%
@@ -94,10 +103,27 @@
 %           First column.                                              %
 %----------------------------------------------------------------------%
 \begin{textblock}{7}(0,2.4)
-\Head{Introductory segment}
+\Head{The Context}
 
 \sf % Selects sans serif family: part of the UCL corporate image!
-Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vestibulum justo. Praesent leo. Sed consectetuer. Aenean pretium, diam quis mattis porttitor, elit velit scelerisque sapien, sed convallis ipsum lectus non neque. Morbi in mi eu neque luctus scelerisque. Curabitur odio. Mauris a mi. Aenean iaculis erat vel sapien. Curabitur nulla velit, feugiat quis, imperdiet sit amet, vestibulum ac, diam. Suspendisse a metus. Pellentesque vulputate venenatis eros. In auctor, eros nec sodales faucibus, erat nisl facilisis nisl, ut rutrum nisl nunc eu est. Quisque eget ante at nunc varius ultrices.
+We start with algebraic torus $T \cong (\mathbb{C}^*)^r$ acting on a vector space $\mathbb{C}^n$. These actions 
+the actions are simple to write out:
+$$
+(\lambda_1, \dots, \lambda_r) \cdot (z_1, \dots, z_n) = ({\lambda_1}^{q_{11}}{\lambda_2}^{q_{12}}\dots {\lambda_r}^{q_{1r}} z_1, \dots, {\lambda_1}^{q_{n1}}{\lambda_2}^{q_{n2}}\dots {\lambda_r}^{q_{nr}} z_1)
+$$
+We get an $n \times r$ integer matrix $Q = (q_{ij})$, called the weight matrix. \\
+We would like to construct an algebraic variety that parametrises the actions quotients. \textbf{Geometric Invariant Theory} (GIT) is the theory that tells us what to throw away before we quotient so that we get a good/geometric quotient. \cite{mumford1994geometric}
+\begin{example}
+  Consider $\mathbb{C}^*$ acting on $\mathbb{C}^2$ linearly, i.e. $\lambda \cdot (z_1, \, z_2) = (\lambda z_1,\, \lambda z_2)$.
+  \begin{center}\includegraphics{orbits of P1.png}\end{center}
+  \begin{picture}(0,0)
+  \put(435,295){$aL$} 
+  \put(550,80){$a$}
+  \put(510,210){\textcolor{DarkBlue}{$F=6\pi\mu a$}}
+  \end{picture} 
+\end{example}
+In general GIT quotients are not unique, and depending on a choice of \textit{stability} 
+
 
 \bigskip
 \hrule
@@ -105,10 +131,12 @@ Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vestibulum justo. Prae
 
 \begin{textblock}{7}(0,4.52)
 
-\Head{First Piece of Content}
+\Head{Geometric Invariant Theory and Wall Crossing}
+\sf
+-first explain action
+-describe the wall crossing algorithm
+-add def of calabi yau
 
-\sf 
-It is worth fiddling around a bit with positioning of the text blocks to get the spacing even. I like a vertical gap of about 0.4 ``block units'' between the horizontal bar at the end of one block and the beginning of the next. There are contruction lines at the end of the \TeX\ file to help with this.
 
 \begin{center}\includegraphics{fig1.eps}\end{center}
 \begin{picture}(0,0)
@@ -125,7 +153,7 @@ Figures (and labels using the \LaTeX\ picture environment) work as you would exp
 
 \begin{textblock}{7}(0,8.70)
 
-\Head{Second Piece of Content}
+\Head{GKZ discriminant locus}
 
 \sf
 Sed metus erat, bibendum ac, congue vitae, mattis et, dolor. Maecenas placerat mauris vel purus. Quisque molestie. Morbi eu mi in nibh venenatis aliquet. Pellentesque dapibus sem eget nibh. Donec sit amet felis. Cras lobortis blandit mauris. Cras non augue. Nullam lobortis risus in augue sodales sollicitudin. Proin vulputate gravida mauris. Sed dictum nunc id turpis. Mauris facilisis condimentum nisl. Aliquam tincidunt risus in tellus. Suspendisse dictum laoreet tellus. In hac habitasse platea dictumst. Proin suscipit, tellus ut molestie pulvinar, velit arcu lobortis neque, nec tempus neque sapien quis turpis. Aliquam accumsan. Ut eros mi, iaculis eu, tempor eu, placerat eget, nisi. Morbi nec justo eu sem fermentum accumsan. Nullam quis ipsum.
@@ -159,7 +187,7 @@ Praesent elementum malesuada mauris. Duis aliquet dolor ut nunc. Pellentesque eu
 
 \begin{textblock}{7}(8,5.25)
 
-\Head{Equations and Tables}
+\Head{Mirror Symmetry Conjecture}
 
 \sf
 Of course, the principal reason for choosing \LaTeX\ is its ability with equations:  
@@ -216,22 +244,10 @@ Integer ante. Mauris tincidunt adipiscing mi. Donec sollicitudin, lacus quis pel
 \end{textblock}
 
 
-\begin{textblock}{7}(16,6.85)
-
-\Head{Discussion and Conclusions}
-
+\begin{textblock}{7}(16, 6.35)
 \sf
-Etiam sit amet nisi. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus pharetra lacus. Aliquam erat volutpat. Donec leo. Mauris dapibus, magna sed hendrerit volutpat, massa magna euismod metus, vel gravida purus odio eget neque. Proin nibh turpis, commodo at, viverra sed, auctor vel, turpis. Mauris massa lacus, malesuada at, consectetuer at, condimentum non, nibh. Sed laoreet, lorem non tristique sodales, mauris nisi molestie dolor, ac volutpat nisl augue id nibh. Mauris orci. Donec non lacus. Duis ut arcu. Aliquam sed lacus eget dui sollicitudin pellentesque. Nunc lacus nisi, semper nec, pellentesque non, dapibus sollicitudin, metus. Aenean ac enim et est sollicitudin ultricies. Integer vitae magna vitae velit condimentum dapibus. Aenean nec sem ut massa condimentum faucibus. 
-
-Proin dignissim nunc in nulla. Vivamus non leo. Nulla ultrices tempor dui. Curabitur nec metus. Aliquam sed libero. Cras orci odio, molestie a, suscipit in, placerat vel, nunc. Vestibulum congue, nunc in faucibus scelerisque, ante tortor dapibus nibh, eu tristique diam urna ac magna. Proin cursus. Morbi quam ligula, fermentum vel, dapibus sit amet, euismod nec, justo. Suspendisse potenti. Nulla eu elit. Pellentesque quam est, pretium ac, suscipit sed, viverra id, sapien.
-Donec tempor semper tortor. Nunc vulputate. Aliquam vitae metus ut sem euismod accumsan. Duis tincidunt lacus sed ipsum. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque nec nisl at erat ornare tempus. Etiam eros odio, ultricies non, hendrerit et, vestibulum in, felis. Vivamus gravida. 
-
-\begin{itemize}
-\item First concluding point; we expected this to be so because of the contruction of the argument and blah. 
-\item Second concluding point: this one is counterintuitive but we can justify it by reference to the extended discussion above.
-\item Third and \textcolor{Red}{most important concluding point}: this is the one we're excited about.
-\end{itemize}
-
+\bibliographystyle{abbrv}
+\bibliography{mybib.bib}
 \vspace*{4mm} % Sometimes you will have to fudge the final spacing.
 \bigskip
 \hrule
