@@ -119,15 +119,20 @@ We construct an algebraic variety that parametrises the actions quotients. \text
   If we take the quotient space, we see that the orbit of the origin cannot be separated from any other orbit. So we have to remove the origin and as expected, we get  GIT quotient $$ \mathbb{C}^2 // \mathbb{C}^* = \mathbb{C}^2 \ {(0, \, 0)} / \mathbb{C}^* = \mathbb{P}^1$$
   \begin{figure}
     \centering
-    \includegraphics[width=13cm]{orbits of P1.png}
+    \includegraphics[width=18cm]{orbits of P1.png}
     \caption{Orbits of the $\mathbb{C}^*$ action on $\mathbb{C}^2$.}
   \end{figure}  
 \end{example}
 In general GIT quotients are not unique and depend on a choice of \textit{stability condition} $\phi \in \mathbb{Z}^r$, where for a given stability condition we denote the GIT quotient $X //_{\phi} G$. Different choices of $\phi$ have us remove different unstable loci and give us non-isomorphic (but birational) quotients.
 \begin{example}
-  Consider $\mathbb{C}^*$ acting on $\mathbb{C}^3$ via $\lambda \cdot (x, \, y, \, z) = (\lambda x,\, \lambda y, \, \lambda^{-1}z)$. The stability conditions space is $\mathbb{Z}$. For $\phi > 0$, we have unstable locus $Z_{+} = \{ x = y = 0 \}$. We have GIT quotient $$\mathbb{C}^3 //_{\phi} \mathbb{C}^* = \mathbb{C}^3 \backslash{\{ x = y = 0 \}} / \mathbb{C}^* = \theta(-1)_{\mathbb{P}^1_{x:y}}.$$
+  Consider $\mathbb{C}^*$ acting on $\mathbb{C}^3$ via $\lambda \cdot (x, \, y, \, z) = (\lambda x,\, \lambda y, \, \lambda^{-1}z)$. The stability conditions space is $\mathbb{Z}$. For $\phi > 0$, we have unstable locus $Z_{+} = \{ x = y = 0 \}$. We have GIT quotient $$\mathbb{C}^3 //_{\phi} \mathbb{C}^* = \mathbb{C}^3 \backslash{\{ x = y = 0 \}} / \mathbb{C}^* = \mathcal{O}(-1)_{\mathbb{P}^1_{x:y}}.$$
    For $\phi < 0$, we have unstable locus $Z_{-} = \{z = 0\}$.
    $$\mathbb{C}^3 //_{\phi} \mathbb{C}^* = \mathbb{C}^3 \backslash{\{ z = 0 \}} / \mathbb{C}^* = \mathbb{A}^1_{x, \, y}.$$
+   \begin{figure}
+    \centering
+    \includegraphics[width=20cm]{diffquotients.png}
+    \caption{Secondary fan of GIT problem $\mathbb{C}^3_{(1, \, 1, \, -1 )}$}
+  \end{figure}  
 \end{example}
 
 \bigskip
@@ -138,26 +143,25 @@ In general GIT quotients are not unique and depend on a choice of \textit{stabil
 %           Second column.                                             %
 %----------------------------------------------------------------------%
 \begin{textblock}{7}(8,2.4)
-\Head{Use of Colour}
-
+\Head{Mirror Symmetry Conjecture Heuristics}
 \sf
-With the {\tt color} package you can use as much colour as you like: but the \textcolor{Red}{Red} and \textcolor{DarkBlue}{DarkBlue} colours defined here are more useful than the obvious \textcolor{red}{red} and \textcolor{blue}{blue} versions, which tend to seem too bright when printed.
-
-Use spacing as well as colour to highlight a key question or issue: 
-\vspace*{1.15\baselineskip}
-\begin{center}
-\textcolor{Red}{Who will rid me of this turbulent priest?}
-\end{center} 
-\vspace*{1.15\baselineskip}
-Praesent elementum malesuada mauris. Duis aliquet dolor ut nunc. Pellentesque euismod augue a odio. 
-
+Mirror symmetry is a serious of mysterior relationships between complex and symplectic geometry. Its most basic formulation is that given a Kähler manifold $X$, there exists a mirror Kähler manifold $\hat{X}$ such that 
+$$
+D^b(X) \cong \text{Fuk}(\hat{X})
+$$
+Actually, we have a whole family of mirrors, each of whom is symplectomorphic to $\hat{X}$, but has a different complex structure. We call the Stringy Kähler moduli space the complex structure moduli space $\mathcal{M}_{CS}$ of the symplectic manifold $\hat{X}$.
+\begin{prop}
+  There is a monodromy action of $\pi_1(\mathcal{M}_{CS})$ on $\hat{X}$ via symplectomorphism, and hence there is a monodromy action of $\pi_1(\mathcal{M}_{CS})$ on $\text{Fuk}(\hat{X})$ via autoequivalence.
+\end{prop}
+By mirror symmetry, you expect to be able to carry over the action $\pi_1(\mathcal{M}_{CS})$ to an action of $D^b(X)$ via autoequilvance.
 \bigskip
 \hrule
+
 \end{textblock}
 
-\begin{textblock}{7}(8,5.25)
+\begin{textblock}{7}(8,5.4)
 
-\Head{Mirror Symmetry Conjecture}
+\Head{Calabi-Yau Toric GIT}
 
 \sf
 Of course, the principal reason for choosing \LaTeX\ is its ability with equations:  
@@ -209,8 +213,21 @@ Aenean feugiat, mauris vitae accumsan venenatis, tortor nunc facilisis velit, ve
 
 Integer ante. Mauris tincidunt adipiscing mi. Donec sollicitudin, lacus quis pellentesque placerat, quam elit pharetra lacus, sit amet placerat nisi quam in lorem. Etiam id nulla a est vestibulum tempus. Nam et nisl non arcu venenatis semper. Duis sed libero. Cras lectus. In semper urna in leo. Sed mattis lacinia arcu. Phasellus ut metus. Phasellus mi dolor, condimentum ut, ornare nec, tempus ac, mi. Integer ante sem, vestibulum in, gravida vel, condimentum non, ipsum.
 
+\
+With the {\tt color} package you can use as much colour as you like: but the \textcolor{Red}{Red} and \textcolor{DarkBlue}{DarkBlue} colours defined here are more useful than the obvious \textcolor{red}{red} and \textcolor{blue}{blue} versions, which tend to seem too bright when printed.
+
+Use spacing as well as colour to highlight a key question or issue: 
+\vspace*{1.15\baselineskip}
+\begin{center}
+\textcolor{Red}{Who will rid me of this turbulent priest?}
+\end{center} 
+\vspace*{1.15\baselineskip}
+Praesent elementum malesuada mauris. Duis aliquet dolor ut nunc. Pellentesque euismod augue a odio. 
+
 \bigskip
 \hrule
+
+\bigskip
 \end{textblock}
 
 
