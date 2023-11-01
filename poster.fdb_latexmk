@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex poster"] 0 "poster.aux" "poster.bbl" "poster" 1698798268
+["bibtex poster"] 0 "poster.aux" "poster.bbl" "poster" 1698848218
   "/usr/local/texlive/2021/texmf-dist/bibtex/bst/base/abbrv.bst" 1292289607 20329 b5fed53e10044d0f8112183785c759b1 ""
   "mybib.bib" 1698773477 2273 c4d19cfaf0b73832ed1c2cb94726716b ""
-  "poster.aux" 1698798268 1106 b5c2dab91496216ccbc90a0d4a4def73 "pdflatex"
+  "poster.aux" 1698848218 1084 f49fc764af9b2fd96fcd287417e70607 "pdflatex"
   (generated)
   "poster.bbl"
   "poster.blg"
-["pdflatex"] 1698798266 "/Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/poster.tex" "/Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/poster.pdf" "poster" 1698798268
-  "/Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/poster.aux" 1698798268 1106 b5c2dab91496216ccbc90a0d4a4def73 ""
-  "/Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/poster.tex" 1698798266 15698 5bf023bafcca4d6b2a14630a3ef2cabc ""
+["pdflatex"] 1698848216 "/Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/poster.tex" "/Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/poster.pdf" "poster" 1698848218
+  "/Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/poster.aux" 1698848218 1084 f49fc764af9b2fd96fcd287417e70607 ""
+  "/Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/poster.tex" 1698848216 14706 0c613d6b8fc1189434dcd7ea8058b4d7 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1246382020 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2021/texmf-dist/fonts/tfm/public/amsfonts/symbols/msam10.tfm" 1246382020 916 f87d7c45f9c908e672703b83b72241a3 ""
@@ -139,15 +139,15 @@
   "a0poster.cls" 1698501082 6331 3571a1b0260674a33ca3be0cf63b1736 ""
   "a0size.sty" 1698501129 8155 37a179636fcecbfc4e9f1e67073f854f ""
   "diffquotients.png" 1698708859 42706 b5f8cf5a7a83f6b2023a6ad1272fd9b3 ""
-  "poster.aux" 1698798268 1106 b5c2dab91496216ccbc90a0d4a4def73 "pdflatex"
-  "poster.bbl" 1698797967 1530 f239e28bdf35c5d0b41fea58005e6eda "bibtex poster"
-  "poster.tex" 1698798266 15698 5bf023bafcca4d6b2a14630a3ef2cabc ""
+  "poster.aux" 1698848218 1084 f49fc764af9b2fd96fcd287417e70607 "pdflatex"
+  "poster.bbl" 1698800310 1530 f239e28bdf35c5d0b41fea58005e6eda "bibtex poster"
+  "poster.tex" 1698848216 14706 0c613d6b8fc1189434dcd7ea8058b4d7 ""
   "rank2.png" 1698793220 689159 9524c0ee972231597e1fcaba68f36532 ""
   "ucl_bar_black.eps" 1698500649 7115 bdfc804678a459fff99f3083755b077c ""
   (generated)
   "a0header.ps"
+  "/Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/poster.log"
   "/Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/poster.pdf"
+  "poster.pdf"
   "poster.log"
   "poster.aux"
-  "/Users/Barbieri/Desktop/LSGNT Year 3/conferences/granada/poster/granadaposter/poster.log"
-  "poster.pdf"

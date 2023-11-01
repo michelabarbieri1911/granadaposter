@@ -113,13 +113,13 @@
 \Head{The B-side: Toric Geometric Invariant Theory}
 
 \sf % Selects sans serif family: part of the UCL corporate image!
-We start with algebraic torus $T \cong (\mathbb{C}^*)^r$ acting on a vector space $\mathbb{C}^n$. These actions 
-the actions are simple to write out:
+We start with algebraic torus $T \cong (\mathbb{C}^*)^r$ acting on a vector space $\mathbb{C}^n$:
 $$
 (\lambda_1, \dots, \lambda_r) \cdot (z_1, \dots, z_n) = ({\lambda_1}^{q_{11}}{\lambda_2}^{q_{12}}\dots {\lambda_r}^{q_{1r}} z_1, \dots, {\lambda_1}^{q_{n1}}{\lambda_2}^{q_{n2}}\dots {\lambda_r}^{q_{nr}} z_1)
 $$
-We get an $n \times r$ integer matrix $Q = (q_{ij})$, called the weight matrix. \\
-We construct an algebraic variety that parametrises the actions quotients. \textcolor{DarkBlue}{\textbf{Geometric Invariant Theory}} (GIT) is the theory that tells \textcolor{DarkBlue}{\textbf{the unstable locus}} to throw away before we quotient so that we get a good/geometric quotient \cite{mumford1994geometric}. GIT quotients are often denoted $X // G$.
+We get an $n \times r$ integer matrix $Q = (q_{ij})$, called the weight matrix. 
+\bigskip\\
+We want to construct an algebraic variety that parametrises the action's orbits. \textcolor{DarkBlue}{\textbf{Geometric Invariant Theory}} (GIT) is the theory that tells \textcolor{DarkBlue}{\textbf{the unstable locus}} to throw away before we quotient so that we get a good/geometric quotient \cite{mumford1994geometric}. GIT quotients are often denoted $X // G$.
 \begin{example}
   Consider $\mathbb{C}^*$ acting on $\mathbb{C}^2$ linearly, i.e. $\lambda \cdot (x, \, y) = (\lambda x,\, \lambda y)$.
   If we take the quotient space, we see that the orbit of the origin cannot be separated from any other orbit. So we have to remove the origin and as expected, we get  GIT quotient $$ \mathbb{C}^2 // \mathbb{C}^* = \mathbb{C}^2 \ {(0, \, 0)} / \mathbb{C}^* = \mathbb{P}^1$$
@@ -143,16 +143,16 @@ In general GIT quotients are not unique and depend on a choice of \textcolor{Dar
 \begin{textblock}{7}(0,9)
   \Head{Mirror Symmetry Conjecture Heuristics}
   \sf
-  Mirror symmetry is a series of mysterious relationships between complex and symplectic geometry. Its most basic formulation is that given a Kähler manifold $X$, there exists a mirror Kähler manifold $\hat{X}$ such that we have equivalence of categories
+  Mirror symmetry is a series of mysterious relationships between complex and symplectic geometry. Given a \textit{complex geometry} $X$, there exists a mirror \textit{symplectic geometry} $\hat{X}$ such that we have equivalence of categories
   $$
   D^b(X) \cong \text{Fuk}(\hat{X})
   $$
   Actually, we have a whole family of mirrors, each of whom is symplectomorphic to $\hat{X}$, but has a different complex structure. We call the \textcolor{DarkBlue}{\textbf{Stringy Kähler moduli space}} the complex structure moduli space $\mathcal{M}_{CS}$ of the symplectic manifold $\hat{X}$.
   \begin{prop}
-    There is a monodromy action of $\pi_1(\mathcal{M}_{CS})$ on $\hat{X}$ via symplectomorphism, and hence there is a monodromy action of $\pi_1(\mathcal{M}_{CS})$ on $\text{Fuk}(\hat{X})$ via autoequivalence.
+    There is a monodromy action of $\pi_1(\mathcal{M}_{CS})$ on $\hat{X}$ via symplectomorphism, and hence an action of $\pi_1(\mathcal{M}_{CS})$ on $\text{Fuk}(\hat{X})$ via autoequivalence.
   \end{prop}
   \begin{center}
-  \textcolor{Red}{By mirror symmetry, the action of $\pi_1(\mathcal{M}_{CS})$ carries to an action of $D^b(X)$ via autoequilvance. In the context of Calabi Yau toric GIT, the conjecture is that there is a particular way that $\pi_1(\mathcal{M}_{CS})$ acts,  via spherical functors.}
+  \textcolor{Red}{By mirror symmetry, the action of $\pi_1(\mathcal{M}_{CS})$ carries to an action of $D^b(X)$ via autoequilvance. In the context of Calabi Yau toric GIT, the conjecture is that there is a particular way that $\pi_1(\mathcal{M}_{CS})$ acts,  via spherical twists.}
   \end{center} 
   The program above has been done in certain cases e.g. in \cite{halpern2020combinatorial}.
   \bigskip
@@ -169,42 +169,36 @@ In general GIT quotients are not unique and depend on a choice of \textcolor{Dar
 \begin{defn}
   A GIT problem $(\mathbb{C}^*)^r$ acting on $\mathbb{C}^n$ is \textcolor{DarkBlue}{\textbf{Calabi-Yau}} if the rows of the weight matrix $Q$ add up to 0.
 \end{defn}
-If a GIT problem is Calabi-Yau, then all the GIT quotients are Calabi-Yau i.e. have trivial canonical bundle. In this context it also means that any two GIT quotients have equivalent derived categories \cite{derivedgit}, so that for any two stability conditions $\phi_1, \, \phi_2 \in \mathbb{Z}^r$:
-$$
-D^b( \mathbb{C}^n //_{\phi_1}(\mathbb{C}^*)^r) \cong D^b( \mathbb{C}^n //_{\phi_2}(\mathbb{C}^*)^r)
-$$
-Let $A = (a_{ij})$ be the cokernel of $Q$, so that we have short exact sequence: 
-\begin{center}
-\begin{tikzcd}
-  0 \arrow[r] & \mathbb{Z}^r \arrow[r, "Q"] & \mathbb{Z}^n \arrow[r, "A"] & \mathbb{Z}^{n-r} \arrow[r] & 0
-\end{tikzcd} 
-\end{center}
-$A$ is $ (n-r)\times n$ integer matrix, where we can choose the first row is 1's by the Calabi-Yau condition. The column vectors, called \textcolor{DarkBlue}{\textbf{rays}}, which live in $\mathbb{Z}^{n-r}$ are therefore all at height 1, and span a $n-r-1$ dimensional polytope $\mathcal{P}(A)$, called the \textcolor{DarkBlue}{\textbf{Primary Polytope}}. Triangulations of $\mathcal{P}(A)$ give us the toric fans for our GIT quotients \cite[Section 4]{coates2018crepant}.
-
-\bigskip
-
-The mirror family in this context is well understood \cite[text]{cox1999mirror}. The mirror family is a family of Landau Ginsburg Models $\left( (C^*)^{n-r}, W_{\underline{\textbf{a}}} \right)$ where $W_{\underline{\textbf{a}}} : (\mathbb{C}^*)^{n-r} \to \mathbb{C}$:
+Suppose $X$ and $Y$ are two GIT quotients. Via wall-crossing you can find a semi-orthogonal decomposition $D^b(X) \cong\langle D^b(Y), \mathcal{C} \rangle$ \cite{derivedgit}. In the Calabi-Yau setting $D^b(X) \cong D^b(Y)$ for any quotients. 
+\vspace*{0.7cm} 
+\\
+Let $A = (a_{ij}) \in M_{(n-r)\times n}(\mathbb{Z})$ be the cokernel of $Q$. Using the CY condition we choose the first row of $A$ to be 1's. The column vectors in $\mathbb{Z}^{n-r}$, called \textcolor{DarkBlue}{\textbf{rays}}, and span a $(n-r-1)$ dimensional polytope $\mathcal{P}(A)$, called the \textcolor{DarkBlue}{\textbf{Primary Polytope}}. Triangulations of $\mathcal{P}(A)$ give us the toric fans for our GIT quotients \cite[Section 4]{coates2018crepant}.
+\vspace*{0.7cm} 
+\\
+The mirror family is a family of Landau Ginsburg Models \cite{cox1999mirror} $\left( (C^*)^{n-r}, W_{\underline{\textbf{a}}} \right)$ where $W_{\underline{\textbf{a}}} : (\mathbb{C}^*)^{n-r} \to \mathbb{C}$:
 \begin{align*}
   W_{\underline{\textbf{a}}} \left(X_1, \dots, X_{n-r}\right)  \:= \:&\text{polynomial with coefficients \underline{\textbf{a}} in variables $X_1$}, \\
   &\text{where the powers are given by the entries of } A = (a_{ij}).
 \end{align*}
-The mirror symmetry statement here says for any GIT quotient $X$:
-$$
-D^b(X) \cong FS\left( (C^*)^{n-r}, W_{\underline{\textbf{a}}} \right)
-$$
-where $FS$ is for Fukaya-Seidel category \cite{seidelfukaya}. Our coefficients parametrise our mirror family and live in $\underline{\textbf{a}} \in \left(  (\mathbb{C}^*)^n \backslash \Delta_A \right)/ A$, where the hypersurface $\Delta_A \subset (\mathbb{C}^*)^n$ is called the \textcolor{DarkBlue}{\textbf{$A$-discriminant}} which was constructed in \cite{gelfand1994discriminants} for any integer matrix $A$. In short, $\Delta_A$ generalises the discriminant of the quadratic to any polynomial with any number of variables. By our mirror symmetry heuristics, this means the Stringy Kähler Moduli space in this context is the parameter space
-$$
+The mirror symmetry statement here says for any GIT quotient $X$,
+$D^b(X) \cong FS\left( (C^*)^{n-r}, W_{\underline{\textbf{a}}} \right)$,
+where $FS$ is for Fukaya-Seidel category \cite{seidelfukaya}.
+\vspace*{0.7cm} 
+\\
+ $\textbf{a}$ parametrises our mirror family and we have
+ $$
 \mathcal{M}_{CS} = \left(  (\mathbb{C}^*)^n \backslash \Delta_A \right)/ A \cong (\mathbb{C}^*)^r \backslash \nabla_A
 $$
+ where the hypersurface $\Delta_A \subset (\mathbb{C}^*)^n$ is called the \textcolor{DarkBlue}{\textbf{$A$-discriminant}} \cite{gelfand1994discriminants}.
 \begin{example}
   Suppose $A = (2 \: 1 \: 0)$. Then $W_{a, b, c} (X)= a X^2 + bX +c$. Then $\Delta_A = \{ b^2 = 4ac\} \subset (\mathbb{C}^*)^3$, and using $A$ to scale out $b$, we get $\left(  (\mathbb{C}^*)^3 \backslash \Delta_A \right)/ A \cong \left( (\mathbb{C}^*)^2 \right) \backslash \{ ac =1/4 \}$.
 \end{example}
-The main observation now is that the discriminant locus is non-irreducible and splits up into components:
+The main observation now is that the discriminant locus arises as the union of components:
 $$
 \Delta_A = \bigcup_{\Gamma \, \text{min face}} \Delta_\Gamma
 $$
-Each of these components corresponds to a \textcolor{DarkBlue}{minimal face} of $\mathcal{P}(A)$, that is faces whose rays are linearly \textbf{dependent}.
-The minimal faces are in 1-1 correspondence with the 'sub GIT problems' with non-trivial \textcolor{DarkBlue}{minimal GIT quotients} $Z_{\Gamma}$, where by minimal GIT quotient we mean a GIT quotient that cannot be decomposed further by the wall-crossing algorithm described in \cite{derivedgit}. There are spherical functors $F_\Gamma: D^b(Z_\Gamma) \to D^b(X)$ \cite{addington2011new}, where by spherical we mean that the twist
+The components correspond to \textbf{\textcolor{DarkBlue}{minimal faces}} of $\mathcal{P}(A)$, that is faces whose rays are \textbf{linearly dependent}. \\
+$\Gamma$ corresponds to a 'sub GIT problems' $Q_\Gamma$ with non-trivial \textbf{\textcolor{DarkBlue}}{minimal GIT quotients} $Z_{\Gamma}$, where by minimal GIT quotient we mean a GIT quotient that cannot be decomposed further by the wall-crossing. There are spherical functors $F_\Gamma: D^b(Z_\Gamma) \to D^b(X)$ \cite{addington2011new}, where by spherical we mean that the twist
 \begin{center}
 \begin{tikzcd}
   T_{F_{\Gamma}} = C ( \: FR  \arrow[r,"\text{counit}"] & I_{D^b(X) } \: )
@@ -216,9 +210,28 @@ is an autoequivalence of $D^b(X)$, where $R_\Gamma : D^b(X) \to D^b(Z_\Gamma)$ i
   Meridians of the $\Delta_\Gamma$ in $\pi_1(\mathcal{M}_{CS})$ acts on $D^b(X)$ via the spherical twists $T_{F_\Gamma}$.
   \end{center}
 }
-\bigskip
 \hrule
 \end{textblock}
+
+
+
+\begin{textblock}{7}(8,10.3)
+  \Head{Toric Calabi Yau 3-folds of Picard Rank 2}
+  
+  \sf
+
+  \begin{figure}
+    \centering
+    \includegraphics[width=25cm]{3foldsofpicardrank2.png}
+    \caption{All the primary polytopes of Toric Calabi Yau 3-folds of Picard Rank 2}
+  \end{figure} 
+  
+  
+  \bigskip
+  \hrule
+  
+\end{textblock}
+
 
 %----------------------------------------------------------------------%
 %           Third column.                                              %
@@ -261,56 +274,36 @@ A^T = &\begin{pmatrix}
 \end{align*}
 We have $$\mathcal{M}_{CS} \cong (\mathbb{C}^{*})^2_{a,b}\backslash \left(\nabla_{\Gamma_0} \cup \nabla_{\Gamma_1} \right) $$
 where we can compute
-$$
-\nabla_{\Gamma_0} = \{(b^2-a)^2 = 4\} \hspace*{3cm} \nabla_{\Gamma_1} = \{ a^2 = 4\}.
-$$
-The 'sub GIT problems' $Q_{\Gamma_0}$ and $Q_{\Gamma_1}$, they have minimal GIT quotients $Z_{\Gamma_0} = \text{pt}$ and $Z_{\Gamma_1}= \mathbb{A}^1$, and spherical functors $F_{\Gamma_0} \mathcal{O}_{\text{pt}} = \mathcal{O}_{0} \in D^b(\left[ \mathbb{A}^3 / \mathbb{Z}_4 \right])$ and $F_{\Gamma_0} = i_{*} \pi^{*}$
-
+$
+\nabla_{\Gamma_0} = \{(b^2-a)^2 = 4\}$ and $\nabla_{\Gamma_1} = \{ a^2 = 4\}.
+$
+The 'sub GIT problems' $Q_{\Gamma_0}$ and $Q_{\Gamma_1}$, they have minimal GIT quotients $Z_{\Gamma_0} = \text{pt}$ and $Z_{\Gamma_1}= \mathbb{A}^1$, and spherical functors $F_{\Gamma_0} \mathcal{O}_{\text{pt}} = \mathcal{O}_{0} \in D^b(\left[ \mathbb{A}^3 / \mathbb{Z}_4 \right])$ and $F_{\Gamma_0} = i_{*} \pi^{*}$:
+\begin{center}
 \begin{tikzcd}
   \left[ \mathbb{A}^1_c / \mathbb{Z}_4\right] \arrow[d,"\pi"] \arrow[r, "i"] & \left[\mathbb{A}^3_{c,d,e} / \mathbb{Z}_4 \right] \\
   \mathbb{A}^1_c &
 \end{tikzcd}
+\end{center}
 
 \begin{figure}
   \centering
-  \includegraphics[width=25cm]{rank2.png}
+  \includegraphics[width=30cm]{rank2.png}
   \caption{Left: The primary polygon $\mathcal{P}(A)$, Right: The secondary fan}
 \end{figure}
 
 \begin{lemma}[M. Barbieri 2023]
-  The spherical twists $T_{F_{\Gamma_0}}$ and $T_{F_{\Gamma_1}}$ satisfy the relations in $\pi_1(\mathcal{M}_{CS})$ when identified witha meridian $\mu_{0}$ of $\nabla_{\Gamma_0}$ and a merdian $\mu_{1}$ of $\nabla_{\Gamma_1}$ respectively.
+  The spherical twists $T_{F_{\Gamma_0}}$ and $T_{F_{\Gamma_1}}$ satisfy the relations of a meridian $\mu_{0}$ of $\nabla_{\Gamma_0}$ and a merdian $\mu_{1}$ of $\nabla_{\Gamma_1}$ in $\pi_1(\mathcal{M}_{CS})$.
 \end{lemma}
-\bigskip
-\hrule
 
-\bigskip
+\hrule
 \end{textblock}
 
-\begin{textblock}{7}(16,7)
-  \Head{Toric Calabi Yau 3-folds of Picard Rank 2}
-  
-  \sf
-
-  \begin{figure}
-    \centering
-    \includegraphics[width=25cm]{3foldsofpicardrank2.png}
-    \caption{All the primary polytopes of Toric Calabi Yau 3-folds of Picard Rank 2}
-  \end{figure} 
-  
-  
-  \bigskip
-  \hrule
-  
-  \bigskip
-  \end{textblock}
-
-
-\begin{textblock}{7}(16, 8.7)
+\begin{textblock}{7}(16, 8.5)
 \sf
 \bibliographystyle{abbrv}
 \bibliography{mybib.bib}
 \vspace*{4mm} % Sometimes you will have to fudge the final spacing.
-\bigskip
+
 \hrule
 \end{textblock}
 
