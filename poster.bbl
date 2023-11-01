@@ -1,8 +1,47 @@
 \begin{thebibliography}{1}
 
+\bibitem{addington2011new}
+N.~Addington.
+\newblock New derived symmetries of some hyperkähler varieties.
+\newblock {\em arXiv preprint arXiv:1112.0487}, 2011.
+
+\bibitem{coates2018crepant}
+T.~Coates, H.~Iritani, and Y.~Jiang.
+\newblock The crepant transformation conjecture for toric complete
+  intersections.
+\newblock {\em Advances in Mathematics}, 329:1002--1087, 2018.
+
+\bibitem{cox1999mirror}
+D.~A. Cox and S.~Katz.
+\newblock {\em Mirror symmetry and algebraic geometry}, volume~68.
+\newblock American Mathematical Society Providence, RI, 1999.
+
+\bibitem{gelfand1994discriminants}
+I.~M. Gelfand, M.~M. Kapranov, A.~V. Zelevinsky, I.~M. Gelfand, M.~M. Kapranov,
+  and A.~V. Zelevinsky.
+\newblock {\em A-discriminants}.
+\newblock Springer, 1994.
+
+\bibitem{derivedgit}
+D.~Halpern-Leistner.
+\newblock The derived category of a git quotient.
+\newblock {\em Journal of the American Mathematical Society}, 28(3):871--912,
+  2015.
+
+\bibitem{halpern2020combinatorial}
+D.~Halpern-Leistner and S.~Sam.
+\newblock Combinatorial constructions of derived equivalences.
+\newblock {\em Journal of the American Mathematical Society}, 33(3):735--773,
+  2020.
+
 \bibitem{mumford1994geometric}
 D.~Mumford, J.~Fogarty, and F.~Kirwan.
 \newblock {\em Geometric invariant theory}, volume~34.
 \newblock Springer Science \& Business Media, 1994.
+
+\bibitem{seidelfukaya}
+P.~Seidel.
+\newblock {\em Fukaya categories and Picard-Lefschetz theory}, volume~10.
+\newblock European Mathematical Society, 2008.
 
 \end{thebibliography}

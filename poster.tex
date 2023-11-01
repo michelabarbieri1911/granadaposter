@@ -23,11 +23,14 @@
 \setcounter{secnumdepth}{0}
 \newcommand{\comment}[1]{}
 \newtheorem{thm}{Theorem}
+\newtheorem{defn}{Definition}
 \newtheorem{prop}{Proposition} 
 \newtheorem{corollary}{Corollary} 
-\newtheorem{lemma}{Lemma} 
-\newtheorem{definition}{Definition}
+\newtheorem{lemma}{Lemma}
 \newtheorem{example}{Example} 
+
+% To be able to draw short exact sequences
+\usepackage{tikz-cd}
 
 % The textpos package is necessary to position textblocks at arbitary 
 % places on the page.
@@ -35,13 +38,16 @@
 
 % Graphics to include graphics. Times is nice on posters, but you
 % might want to switch it off and go for CMR fonts.
-\usepackage[final]{graphicx}
-\usepackage{wrapfig,helvet}
+\usepackage{graphicx}
+\usepackage{wrapfig}
 \usepackage{amsmath}
 
 %to write complex numbers, integers, rationals
 \usepackage{amsfonts}
 \usepackage{caption}
+
+% To use align
+\usepackage{amsmath}
 
 % These colours are tried and tested for titles and headers. Don't
 % over use color!
@@ -113,84 +119,103 @@ $$
 (\lambda_1, \dots, \lambda_r) \cdot (z_1, \dots, z_n) = ({\lambda_1}^{q_{11}}{\lambda_2}^{q_{12}}\dots {\lambda_r}^{q_{1r}} z_1, \dots, {\lambda_1}^{q_{n1}}{\lambda_2}^{q_{n2}}\dots {\lambda_r}^{q_{nr}} z_1)
 $$
 We get an $n \times r$ integer matrix $Q = (q_{ij})$, called the weight matrix. \\
-We construct an algebraic variety that parametrises the actions quotients. \textit{Geometric Invariant Theory} (GIT) is the theory that tells \textit{the unstable locus} to throw away before we quotient so that we get a good/geometric quotient \cite{mumford1994geometric}. GIT quotients are often denoted $X // G$.
+We construct an algebraic variety that parametrises the actions quotients. \textcolor{DarkBlue}{\textbf{Geometric Invariant Theory}} (GIT) is the theory that tells \textcolor{DarkBlue}{\textbf{the unstable locus}} to throw away before we quotient so that we get a good/geometric quotient \cite{mumford1994geometric}. GIT quotients are often denoted $X // G$.
 \begin{example}
   Consider $\mathbb{C}^*$ acting on $\mathbb{C}^2$ linearly, i.e. $\lambda \cdot (x, \, y) = (\lambda x,\, \lambda y)$.
   If we take the quotient space, we see that the orbit of the origin cannot be separated from any other orbit. So we have to remove the origin and as expected, we get  GIT quotient $$ \mathbb{C}^2 // \mathbb{C}^* = \mathbb{C}^2 \ {(0, \, 0)} / \mathbb{C}^* = \mathbb{P}^1$$
-  \begin{figure}
-    \centering
-    \includegraphics[width=18cm]{orbits of P1.png}
-    \caption{Orbits of the $\mathbb{C}^*$ action on $\mathbb{C}^2$.}
-  \end{figure}  
 \end{example}
-In general GIT quotients are not unique and depend on a choice of \textit{stability condition} $\phi \in \mathbb{Z}^r$, where for a given stability condition we denote the GIT quotient $X //_{\phi} G$. Different choices of $\phi$ have us remove different unstable loci and give us non-isomorphic (but birational) quotients.
+In general GIT quotients are not unique and depend on a choice of \textcolor{DarkBlue}{\textbf{stability condition}} $\phi \in \mathbb{Z}^r$, where for a given stability condition we denote the GIT quotient $X //_{\phi} G$. Different choices of $\phi$ have us remove different unstable loci and give us non-isomorphic (but birational) quotients.
 \begin{example}
   Consider $\mathbb{C}^*$ acting on $\mathbb{C}^3$ via $\lambda \cdot (x, \, y, \, z) = (\lambda x,\, \lambda y, \, \lambda^{-1}z)$. The stability conditions space is $\mathbb{Z}$. For $\phi > 0$, we have unstable locus $Z_{+} = \{ x = y = 0 \}$. We have GIT quotient $$\mathbb{C}^3 //_{\phi} \mathbb{C}^* = \mathbb{C}^3 \backslash{\{ x = y = 0 \}} / \mathbb{C}^* = \mathcal{O}(-1)_{\mathbb{P}^1_{x:y}}.$$
    For $\phi < 0$, we have unstable locus $Z_{-} = \{z = 0\}$.
    $$\mathbb{C}^3 //_{\phi} \mathbb{C}^* = \mathbb{C}^3 \backslash{\{ z = 0 \}} / \mathbb{C}^* = \mathbb{A}^1_{x, \, y}.$$
-   \begin{figure}
+  \begin{figure}
     \centering
     \includegraphics[width=20cm]{diffquotients.png}
     \caption{Secondary fan of GIT problem $\mathbb{C}^3_{(1, \, 1, \, -1 )}$}
-  \end{figure}  
+  \end{figure} 
 \end{example}
 
 \bigskip
 \hrule
 \end{textblock}
+
+\begin{textblock}{7}(0,9)
+  \Head{Mirror Symmetry Conjecture Heuristics}
+  \sf
+  Mirror symmetry is a series of mysterious relationships between complex and symplectic geometry. Its most basic formulation is that given a Kähler manifold $X$, there exists a mirror Kähler manifold $\hat{X}$ such that we have equivalence of categories
+  $$
+  D^b(X) \cong \text{Fuk}(\hat{X})
+  $$
+  Actually, we have a whole family of mirrors, each of whom is symplectomorphic to $\hat{X}$, but has a different complex structure. We call the \textcolor{DarkBlue}{\textbf{Stringy Kähler moduli space}} the complex structure moduli space $\mathcal{M}_{CS}$ of the symplectic manifold $\hat{X}$.
+  \begin{prop}
+    There is a monodromy action of $\pi_1(\mathcal{M}_{CS})$ on $\hat{X}$ via symplectomorphism, and hence there is a monodromy action of $\pi_1(\mathcal{M}_{CS})$ on $\text{Fuk}(\hat{X})$ via autoequivalence.
+  \end{prop}
+  \begin{center}
+  \textcolor{Red}{By mirror symmetry, the action of $\pi_1(\mathcal{M}_{CS})$ carries to an action of $D^b(X)$ via autoequilvance. In the context of Calabi Yau toric GIT, the conjecture is that there is a particular way that $\pi_1(\mathcal{M}_{CS})$ acts,  via spherical functors.}
+  \end{center} 
+  The program above has been done in certain cases e.g. in \cite{halpern2020combinatorial}.
+  \bigskip
+  \hrule
+  
+  \end{textblock}
 
 %----------------------------------------------------------------------%
 %           Second column.                                             %
 %----------------------------------------------------------------------%
 \begin{textblock}{7}(8,2.4)
-\Head{Mirror Symmetry Conjecture Heuristics}
-\sf
-Mirror symmetry is a serious of mysterior relationships between complex and symplectic geometry. Its most basic formulation is that given a Kähler manifold $X$, there exists a mirror Kähler manifold $\hat{X}$ such that 
-$$
-D^b(X) \cong \text{Fuk}(\hat{X})
-$$
-Actually, we have a whole family of mirrors, each of whom is symplectomorphic to $\hat{X}$, but has a different complex structure. We call the Stringy Kähler moduli space the complex structure moduli space $\mathcal{M}_{CS}$ of the symplectic manifold $\hat{X}$.
-\begin{prop}
-  There is a monodromy action of $\pi_1(\mathcal{M}_{CS})$ on $\hat{X}$ via symplectomorphism, and hence there is a monodromy action of $\pi_1(\mathcal{M}_{CS})$ on $\text{Fuk}(\hat{X})$ via autoequivalence.
-\end{prop}
-By mirror symmetry, you expect to be able to carry over the action $\pi_1(\mathcal{M}_{CS})$ to an action of $D^b(X)$ via autoequilvance.
-\bigskip
-\hrule
-
-\end{textblock}
-
-\begin{textblock}{7}(8,5.4)
-
 \Head{Calabi-Yau Toric GIT}
-
 \sf
-Of course, the principal reason for choosing \LaTeX\ is its ability with equations:  
-\[ 
-   U_\mathrm{doublet} = \frac{mg}{2\pi\mu a}\left( \int_0^\infty \left\{ 1
-       - \frac{2\sinh^2{s} - 2s^2}{\sinh{2s}+2s}\right\}\,\ds
-   \right)^{-1} \approx \frac{1.55mg}{6\pi\mu a}, \] 
-but it's equally easy to include tables: 
-\begin{center} 
-\begin{tabular}{cccccccccccr}
-\hline
-  && \multicolumn{2}{c}{$U_1$}  && \multicolumn{2}{c}{$U_2$} 
-  && \multicolumn{2}{c}{$U_3$} & $U_3$ \\ 
-$L$ &&    MR   &   SD   &&   MR   &   SD   &&   MR    &   SD & error \\ 
-\hline
-2.01 &&0.65528 &0.64739 &&0.63461 &0.62691 &&0.00498 &0.00451 & 9\%\\ 
-2.10 &&0.73857 &0.73126 &&0.59718 &0.58784 &&0.03517 &0.02570 &27\%\\ 
-2.50 &&0.87765 &0.87482 &&0.49545 &0.48829 &&0.07393 &0.05853 &21\%\\ 
-3.00 &&0.93905 &0.93806 &&0.41694 &0.41356 &&0.07824 &0.06970 &11\%\\ 
-4.00 &&0.97964 &0.97945 &&0.31859 &0.31774 &&0.06925 &0.06639 & 4\%\\ 
-6.00 &&0.99581 &0.99579 &&0.21586 &0.21575 &&0.05078 &0.05019 & 1\%\\ 
-\hline
-\end{tabular} 
-\end{center}
-and, of course, images:
+\begin{defn}
+  A GIT problem $(\mathbb{C}^*)^r$ acting on $\mathbb{C}^n$ is \textcolor{DarkBlue}{\textbf{Calabi-Yau}} if the rows of the weight matrix $Q$ add up to 0.
+\end{defn}
+If a GIT problem is Calabi-Yau, then all the GIT quotients are Calabi-Yau i.e. have trivial canonical bundle. In this context it also means that any two GIT quotients have equivalent derived categories \cite{derivedgit}, so that for any two stability conditions $\phi_1, \, \phi_2 \in \mathbb{Z}^r$:
+$$
+D^b( \mathbb{C}^n //_{\phi_1}(\mathbb{C}^*)^r) \cong D^b( \mathbb{C}^n //_{\phi_2}(\mathbb{C}^*)^r)
+$$
+Let $A = (a_{ij})$ be the cokernel of $Q$, so that we have short exact sequence: 
 \begin{center}
-\rotatebox{-90}{\scalebox{2.22}{\includegraphics{fig2.eps}}}
+\begin{tikzcd}
+  0 \arrow[r] & \mathbb{Z}^r \arrow[r, "Q"] & \mathbb{Z}^n \arrow[r, "A"] & \mathbb{Z}^{n-r} \arrow[r] & 0
+\end{tikzcd} 
 \end{center}
+$A$ is $ (n-r)\times n$ integer matrix, where we can choose the first row is 1's by the Calabi-Yau condition. The column vectors, called \textcolor{DarkBlue}{\textbf{rays}}, which live in $\mathbb{Z}^{n-r}$ are therefore all at height 1, and span a $n-r-1$ dimensional polytope $\mathcal{P}(A)$, called the \textcolor{DarkBlue}{\textbf{Primary Polytope}}. Triangulations of $\mathcal{P}(A)$ give us the toric fans for our GIT quotients \cite[Section 4]{coates2018crepant}.
 
+\bigskip
+
+The mirror family in this context is well understood \cite[text]{cox1999mirror}. The mirror family is a family of Landau Ginsburg Models $\left( (C^*)^{n-r}, W_{\underline{\textbf{a}}} \right)$ where $W_{\underline{\textbf{a}}} : (\mathbb{C}^*)^{n-r} \to \mathbb{C}$:
+\begin{align*}
+  W_{\underline{\textbf{a}}} \left(X_1, \dots, X_{n-r}\right)  \:= \:&\text{polynomial with coefficients \underline{\textbf{a}} in variables $X_1$}, \\
+  &\text{where the powers are given by the entries of } A = (a_{ij}).
+\end{align*}
+The mirror symmetry statement here says for any GIT quotient $X$:
+$$
+D^b(X) \cong FS\left( (C^*)^{n-r}, W_{\underline{\textbf{a}}} \right)
+$$
+where $FS$ is for Fukaya-Seidel category \cite{seidelfukaya}. Our coefficients parametrise our mirror family and live in $\underline{\textbf{a}} \in \left(  (\mathbb{C}^*)^n \backslash \Delta_A \right)/ A$, where the hypersurface $\Delta_A \subset (\mathbb{C}^*)^n$ is called the \textcolor{DarkBlue}{\textbf{$A$-discriminant}} which was constructed in \cite{gelfand1994discriminants} for any integer matrix $A$. In short, $\Delta_A$ generalises the discriminant of the quadratic to any polynomial with any number of variables. By our mirror symmetry heuristics, this means the Stringy Kähler Moduli space in this context is the parameter space
+$$
+\mathcal{M}_{CS} = \left(  (\mathbb{C}^*)^n \backslash \Delta_A \right)/ A \cong (\mathbb{C}^*)^r \backslash \nabla_A
+$$
+\begin{example}
+  Suppose $A = (2 \: 1 \: 0)$. Then $W_{a, b, c} (X)= a X^2 + bX +c$. Then $\Delta_A = \{ b^2 = 4ac\} \subset (\mathbb{C}^*)^3$, and using $A$ to scale out $b$, we get $\left(  (\mathbb{C}^*)^3 \backslash \Delta_A \right)/ A \cong \left( (\mathbb{C}^*)^2 \right) \backslash \{ ac =1/4 \}$.
+\end{example}
+The main observation now is that the discriminant locus is non-irreducible and splits up into components:
+$$
+\Delta_A = \bigcup_{\Gamma \, \text{min face}} \Delta_\Gamma
+$$
+Each of these components corresponds to a \textcolor{DarkBlue}{minimal face} of $\mathcal{P}(A)$, that is faces whose rays are linearly \textbf{dependent}.
+The minimal faces are in 1-1 correspondence with the 'sub GIT problems' with non-trivial \textcolor{DarkBlue}{minimal GIT quotients} $Z_{\Gamma}$, where by minimal GIT quotient we mean a GIT quotient that cannot be decomposed further by the wall-crossing algorithm described in \cite{derivedgit}. There are spherical functors $F_\Gamma: D^b(Z_\Gamma) \to D^b(X)$ \cite{addington2011new}, where by spherical we mean that the twist
+\begin{center}
+\begin{tikzcd}
+  T_{F_{\Gamma}} = C ( \: FR  \arrow[r,"\text{counit}"] & I_{D^b(X) } \: )
+\end{tikzcd}
+\end{center}
+is an autoequivalence of $D^b(X)$, where $R_\Gamma : D^b(X) \to D^b(Z_\Gamma)$ is the right adjoint.
+\textcolor{Red}{
+  \begin{center}
+  Meridians of the $\Delta_\Gamma$ in $\pi_1(\mathcal{M}_{CS})$ acts on $D^b(X)$ via the spherical twists $T_{F_\Gamma}$.
+  \end{center}
+}
 \bigskip
 \hrule
 \end{textblock}
@@ -200,38 +225,87 @@ and, of course, images:
 %----------------------------------------------------------------------%
 \begin{textblock}{7}(16,2.4)
 
-\Head{Sectioning}
-
-\Subhead{First Subsection}
-
+\Head{Rank 2 Example}
 \sf
-Aenean feugiat, mauris vitae accumsan venenatis, tortor nunc facilisis velit, vel aliquam felis dui non ante. Aenean commodo, sem vel malesuada placerat, erat lacus lacinia magna, quis euismod quam nulla vitae turpis. Vivamus sapien. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nunc a dolor. Sed diam leo, fringilla non, fermentum non, ultricies tempor, dolor. Mauris vehicula, urna ac bibendum scelerisque, enim nisl vehicula libero, id blandit enim lacus et neque. Nunc posuere elit at erat. Integer commodo, eros dapibus blandit facilisis, dolor ipsum dictum dui, sit amet iaculis enim elit sed magna. Nunc libero nunc, malesuada sit amet, tincidunt at, pharetra ut, arcu.
+Consider GIT problem
+\begin{align*}
+Q = \begin{pmatrix}
+  -1 & 2 \\
+  2 & 0 \\
+  -1 & 0 \\
+  0 & -1 \\
+  0 & -1
+\end{pmatrix}
+\begin{matrix}
+  a \\
+  b\\
+  c\\
+  d\\
+  e
+\end{matrix}
+\hspace*{4cm}
+A^T = &\begin{pmatrix}
+ 1 & 0 & 0 \\
+ 1 & 1 & 0 \\
+ 1 & 2 & 0 \\
+ 1 & 0 & 1 \\
+ 1 & 0 & -1
+\end{pmatrix}
+\begin{matrix}
+  a \\
+  b\\
+  c\\
+  d\\
+  e
+\end{matrix}
+\end{align*}
+We have $$\mathcal{M}_{CS} \cong (\mathbb{C}^{*})^2_{a,b}\backslash \left(\nabla_{\Gamma_0} \cup \nabla_{\Gamma_1} \right) $$
+where we can compute
+$$
+\nabla_{\Gamma_0} = \{(b^2-a)^2 = 4\} \hspace*{3cm} \nabla_{\Gamma_1} = \{ a^2 = 4\}.
+$$
+The 'sub GIT problems' $Q_{\Gamma_0}$ and $Q_{\Gamma_1}$, they have minimal GIT quotients $Z_{\Gamma_0} = \text{pt}$ and $Z_{\Gamma_1}= \mathbb{A}^1$, and spherical functors $F_{\Gamma_0} \mathcal{O}_{\text{pt}} = \mathcal{O}_{0} \in D^b(\left[ \mathbb{A}^3 / \mathbb{Z}_4 \right])$ and $F_{\Gamma_0} = i_{*} \pi^{*}$
 
-\bigskip
+\begin{tikzcd}
+  \left[ \mathbb{A}^1_c / \mathbb{Z}_4\right] \arrow[d,"\pi"] \arrow[r, "i"] & \left[\mathbb{A}^3_{c,d,e} / \mathbb{Z}_4 \right] \\
+  \mathbb{A}^1_c &
+\end{tikzcd}
 
-\Subhead{Second Subsection}
+\begin{figure}
+  \centering
+  \includegraphics[width=25cm]{rank2.png}
+  \caption{Left: The primary polygon $\mathcal{P}(A)$, Right: The secondary fan}
+\end{figure}
 
-Integer ante. Mauris tincidunt adipiscing mi. Donec sollicitudin, lacus quis pellentesque placerat, quam elit pharetra lacus, sit amet placerat nisi quam in lorem. Etiam id nulla a est vestibulum tempus. Nam et nisl non arcu venenatis semper. Duis sed libero. Cras lectus. In semper urna in leo. Sed mattis lacinia arcu. Phasellus ut metus. Phasellus mi dolor, condimentum ut, ornare nec, tempus ac, mi. Integer ante sem, vestibulum in, gravida vel, condimentum non, ipsum.
-
-\
-With the {\tt color} package you can use as much colour as you like: but the \textcolor{Red}{Red} and \textcolor{DarkBlue}{DarkBlue} colours defined here are more useful than the obvious \textcolor{red}{red} and \textcolor{blue}{blue} versions, which tend to seem too bright when printed.
-
-Use spacing as well as colour to highlight a key question or issue: 
-\vspace*{1.15\baselineskip}
-\begin{center}
-\textcolor{Red}{Who will rid me of this turbulent priest?}
-\end{center} 
-\vspace*{1.15\baselineskip}
-Praesent elementum malesuada mauris. Duis aliquet dolor ut nunc. Pellentesque euismod augue a odio. 
-
+\begin{lemma}[M. Barbieri 2023]
+  The spherical twists $T_{F_{\Gamma_0}}$ and $T_{F_{\Gamma_1}}$ satisfy the relations in $\pi_1(\mathcal{M}_{CS})$ when identified witha meridian $\mu_{0}$ of $\nabla_{\Gamma_0}$ and a merdian $\mu_{1}$ of $\nabla_{\Gamma_1}$ respectively.
+\end{lemma}
 \bigskip
 \hrule
 
 \bigskip
 \end{textblock}
 
+\begin{textblock}{7}(16,7)
+  \Head{Toric Calabi Yau 3-folds of Picard Rank 2}
+  
+  \sf
 
-\begin{textblock}{7}(16, 6.35)
+  \begin{figure}
+    \centering
+    \includegraphics[width=25cm]{3foldsofpicardrank2.png}
+    \caption{All the primary polytopes of Toric Calabi Yau 3-folds of Picard Rank 2}
+  \end{figure} 
+  
+  
+  \bigskip
+  \hrule
+  
+  \bigskip
+  \end{textblock}
+
+
+\begin{textblock}{7}(16, 8.7)
 \sf
 \bibliographystyle{abbrv}
 \bibliography{mybib.bib}
